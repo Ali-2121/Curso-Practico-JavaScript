@@ -18,17 +18,69 @@
         <form action="">
           <fieldset>
               <legend>Cuadrado</legend>
-            <label for="InputCuadrado">
-                <span>Escribe cuánto mide cada lado de tu cuadrado</span>
-                <input 
-                type="number"
-                id="InputCuadrado" 
-                placeholder="Ejemplo: 6">
-                <button type="button" onclick="calcularPerimetroCuadrado()">Calcular perímetro</button>
-                <button type="button"
-                onclick="calcularAreaCuadrado()">Calcular área</button>
-            </label>
+              <label for="InputCuadrado">
+                      <span>Escribe cuánto mide cada lado de tu cuadrado</span>
+                      <input 
+                      type="number"
+                      id="InputCuadrado" 
+                      placeholder="Lado del cuadrado">
+
+                      <button type="button" 
+                      onclick="calcularPerimetroCuadrado()">Calcular perímetro</button>
+                      <button type="button"
+                      onclick="calcularAreaCuadrado()">Calcular área</button>
+             </label>
           </fieldset>
+
+
+
+            <fieldset>
+                <legend>Triángulo</legend>
+                <label for="InputTriangulo">
+                    <span>Escribe cuánto miden los lados, la base y la altura de tu triángulo</span>
+                    <input 
+                    type="number"
+                    id="InputTrianL1" 
+                    placeholder="Lado 1 del triángulo">
+    
+                    <input 
+                    type="number"
+                    id="InputTrianL2" 
+                    placeholder="Lado 2 del triángulo">
+    
+                    <input 
+                    type="number"
+                    id="InputTrianBase" 
+                    placeholder="Base del triángulo">
+    
+                    <input 
+                    type="number"
+                    id="InputTrianAltura" 
+                    placeholder="Altura del triángulo">
+    
+                    <button type="button" 
+                    onclick="calcularPerimetroTriangulo()">Calcular perímetro</button>
+                    <button type="button"
+                    onclick="calcularAreaTriangulo()">Calcular área</button>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Círculo</legend>
+                <label for="InputCirculo">
+                    <span>Escribe cuánto mide el radio del Círculo</span>
+                    <input 
+                    type="number"
+                    id="InputCirculo" 
+                    placeholder="Radio del Círculo">
+        
+                    <button type="button" 
+                    onclick="calcularPerimetroCirculo()">Calcular perímetro</button>
+                    <button type="button"
+                    onclick="calcularAreaCirculo()">Calcular área</button>
+                </label>
+            </fieldset>
+            
         </form>
     </section>
 
