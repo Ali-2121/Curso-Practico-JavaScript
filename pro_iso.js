@@ -7,6 +7,13 @@ function esIsosceles(lado1,lado2,base){
    
 }
 
+function AlturaTriangulo(lado1, base){
+     return(Math.sqrt((Number(lado1) * Number(lado1) - Number(base) / 4)));
+}
+
+
+
+
 function validarTriangulo(){
     const inputL1 = document.getElementById("TrianL1");
     const valorL1 = inputL1.value;
@@ -17,4 +24,14 @@ function validarTriangulo(){
  
     const tipoTrian = esIsosceles(valorL1, valorL2, valorBase);
     alert (tipoTrian);
+}
+
+function calcularAlturaTriangulo(){
+    const inputL1 = document.getElementById("TrianL1");
+    const valorL1 = inputL1.value;
+    const inputBase = document.getElementById("TrianBase");
+    const valorBase = inputBase.value;
+    
+    const AlturaTrian =  AlturaTriangulo(valorL1, valorBase);
+    alert (AlturaTrian);
 }
