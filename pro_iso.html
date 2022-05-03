@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Esta página te dará la altura de un triángulo isósceles">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <title>Altura triángulo</title>
+</head>
+<body>
+    <header>
+        <h1>Triangulo Isosceles </h1>
+        <h3>Este es ejercicio final  del curso práctico de JS</h3>
+    </header>
+
+    <fieldset>
+        <legend>Triángulo Isósceles</legend>
+        <label for="TrianL1">
+            <span>Medida del primer lado de tu Triángulo</span>
+            <input 
+            type="number" 
+            id="TrianL1"
+            placeholder="Lado 1 ">
+        </label><br>
+
+        <label for="TrianL2">
+            <span>Medida del segundo lado de tu Triángulo</span>
+            <input 
+            type="number" 
+            id="TrianL2"
+            placeholder="Lado 2 ">
+        </label><br>
+
+        <label for="TrianBase">
+            <span>Medida de la base de tu Triángulo</span>
+            <input 
+            type="number" 
+            id="TrianBase"
+            placeholder="Base del Triángulo ">
+        </label><br>
+
+        <button type="button" 
+        onclick="validarTriangulo()">¿Es isósceles mi triángulo?
+        </button>
+        <button type="button"
+        onclick="calcularAlturaTriangulo()">Calcular la alturas
+        </button>
+    </fieldset>
+    <script src="./pro_iso.js"></script>
+
+</body>
+</html>
