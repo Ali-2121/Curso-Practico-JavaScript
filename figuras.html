@@ -36,33 +36,43 @@
 
             <fieldset>
                 <legend>Triángulo</legend>
-                <label for="InputTriangulo">
-                    <span>Escribe cuánto miden los lados, la base y la altura de tu triángulo</span>
+                <label for="TrianL1">
+                    <span>Medida del primer lado de tu Triángulo</span>
                     <input 
-                    type="number"
-                    id="InputTrianL1" 
-                    placeholder="Lado 1 del triángulo">
-    
+                    type="number" 
+                    id="TrianL1"
+                    placeholder="Lado 1 ">
+                </label><br>
+
+                <label for="TrianL2">
+                    <span>Medida del segundo lado de tu Triángulo</span>
                     <input 
-                    type="number"
-                    id="InputTrianL2" 
-                    placeholder="Lado 2 del triángulo">
-    
+                    type="number" 
+                    id="TrianL2"
+                    placeholder="Lado 2 ">
+                </label><br>
+
+                <label for="TrianBase">
+                    <span>Medida de la base de tu Triángulo</span>
                     <input 
-                    type="number"
-                    id="InputTrianBase" 
-                    placeholder="Base del triángulo">
-    
+                    type="number" 
+                    id="TrianBase"
+                    placeholder="Base del Triángulo ">
+                </label><br>
+
+                <label for="TrianAltura">
+                    <span>Medida de la altura de tu Triángulo</span>
                     <input 
-                    type="number"
-                    id="InputTrianAltura" 
-                    placeholder="Altura del triángulo">
-    
-                    <button type="button" 
-                    onclick="calcularPerimetroTriangulo()">Calcular perímetro</button>
-                    <button type="button"
-                    onclick="calcularAreaTriangulo()">Calcular área</button>
+                    type="number" 
+                    id="TrianAltura"
+                    placeholder="Altura del Triángulo">
                 </label>
+                <button type="button" 
+                onclick="calcularPerimetroTriangulo()">Calcular perímetro
+                </button>
+                <button type="button"
+                onclick="calcularAreaTriangulo()">Calcular área
+                </button>
             </fieldset>
 
             <fieldset>
