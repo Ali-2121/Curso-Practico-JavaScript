@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Esta página te cómo obtener en código JS descuentos">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <title>Porcentajes y descuentos | Curso Práctico de Js en Platzi</title>
+</head>
+<body>
+    <header>
+        <h1>Cupones especiales</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Calcula el precio a pagar de tus productos con cupones especiales</h2>
+            <p>Los cupones disponibles son:</p>
+            <ul>
+                <li>Primera Compra</li>
+                <li>Quinta Compra</li>
+                <li>Llevo más de 6 productos</li>
+            </ul>
+            <form action="">
+                <label for="total_compra">
+                    <span>Escibe el monto total de tu compra </span>
+                    <input type="number"
+                    id="total_compra"
+                    placeholder="1,000">
+                </label><br>
+
+                <label for="miCupon">
+                    <span>Escibe el cupón que quieres canjear </span>
+                    <input type="text"
+                    id="miCupon"
+                    placeholder="nombre del cupón">
+                </label><br>
+
+                <button type="button"
+                onclick="buttonPriceCupon()">Calcular el precio con tu cupon</button>
+                <p id="ResultP"></p>
+            </form>
+        </section>
+    </main>
+    <script src="././cupones_ali.js"></script>
+</body>
+</html>
