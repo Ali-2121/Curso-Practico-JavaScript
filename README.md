@@ -16,3 +16,12 @@ Todo lo que hicimos en el Curso con Juan DC
 -Segundo paso: Implementar las fórmulas en JavaScript 
 -Tercer paso: Crear funciones  
 -Cuarto paso: Integrar JavaScript con HTML
+
+## Taller #3: pROMEDIO,MODA Y MEDIANA
+
+-Primer paso: Definir las fórmulas
+-Segundo paso: Implementar las fórmulas en JavaScript 
+-Tercer paso: Crear funciones  
+-Cuarto paso: Integrar JavaScript con HTML
+
+
