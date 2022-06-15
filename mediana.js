@@ -47,7 +47,24 @@ if (esPar(lista1.length)){
 }
 
 function nuevaLista (elementosNuevos){
-    const mitadNuevaLista = parseInt(elementosNuevos.length/2);
+             const numbers = elementosNuevos;
+             numbers.sort(function(a, b) {
+             return a - b;
+             });
+             const nuevosNumeros = numbers;
+             console.log(nuevosNumeros);
+           
+    function calculalaMedia(lista){    
+        const sumaLista = lista.reduce(
+            function (valorAcumulado = 0, nuevoValor ){
+                return valorAcumulado + nuevoValor;
+            }
+        );
+     
+        const promedioLista = sumaLista/ lista.length;
+        return promedioLista;
+     }
+    const mitadNuevaLista = parseInt(nuevosNumeros.length/2);
 
     function esPar(numerito){
         if(numerito % 2 === 0){
@@ -58,16 +75,17 @@ function nuevaLista (elementosNuevos){
         }
     }
 
-    if (esPar(elementosNuevos.length)){
-        const elementoo1 = elementosNuevos[mitadNuevaLista - 1];
-        const elementoo2 = elementosNuevos[mitadNuevaLista];
+    if (esPar(nuevosNumeros.length)){
+        const elementoo1 = nuevosNumeros[mitadNuevaLista - 1];
+        const elementoo2 = nuevosNumeros[mitadNuevaLista];
 
-        const promedioElementos1y2 =  calculaMedioAritmetica([elementoo1, elementoo2]);
+        const promedioElementos1y2 =  calculalaMedia([elementoo1, elementoo2]);
         let laMediana = promedioElementos1y2;
-        console.log (laMediana);
+        return laMediana;
     
     }else{
-        let laMediana = elementosNuevos[mitadNuevaLista];
-        console.log (laMediana);
+        let laMediana = nuevosNumeros[mitadNuevaLista];
+        return laMediana;
+        
     }
 }
