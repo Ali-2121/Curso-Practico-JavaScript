@@ -12,9 +12,8 @@ function calculaMedioAritmetica(lista){
 //Nuestro array de donde vamos a calcular la mediana
 const lista1 = [
     100,
-    200,
     500,
-    800,
+    900,
     400000000000,
 ];//Aquí tomamos el número de elementos del array (quen en este caso es 4(par)) y lo dividimos entre 2, ese valor se queda guardado en mitadLista1 
 const mitadLista1 = parseInt(lista1.length /2);
@@ -45,4 +44,30 @@ if (esPar(lista1.length)){
 }else{
     //Si el número es impar, se indica que el array que tiene nuestra lista, va a ser contado y el número de elementos será dividido entre 2 (mitadLista1). El resultado se guardará en la variable vacía "mediana", que será la posición del elemento dentro del array [0,1,2,3,4...] y se tomará el valor de la posición.
     mediana = lista1[mitadLista1];
+}
+
+function nuevaLista (elementosNuevos){
+    const mitadNuevaLista = parseInt(elementosNuevos.length/2);
+
+    function esPar(numerito){
+        if(numerito % 2 === 0){
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    if (esPar(elementosNuevos.length)){
+        const elementoo1 = elementosNuevos[mitadNuevaLista - 1];
+        const elementoo2 = elementosNuevos[mitadNuevaLista];
+
+        const promedioElementos1y2 =  calculaMedioAritmetica([elementoo1, elementoo2]);
+        let laMediana = promedioElementos1y2;
+        console.log (laMediana);
+    
+    }else{
+        let laMediana = elementosNuevos[mitadNuevaLista];
+        console.log (laMediana);
+    }
 }
