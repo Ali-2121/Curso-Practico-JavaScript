@@ -35,3 +35,27 @@ const lista1Array =Object.entries(lista1Count).sort(
 )
 
 const moda = lista1Array[lista1Array.length - 1];
+
+
+function calcularModa (nuevaLista){
+    const nuevaListaOrdenada = {};
+
+    nuevaLista.map(
+        function ( elemento){
+            if (nuevaListaOrdenada[elemento] ){
+                nuevaListaOrdenada[elemento] += 1;
+            }else{
+                nuevaListaOrdenada[elemento] = 1;
+            }
+            
+        }
+    )
+    
+    const objetoConvertido =Object.entries(nuevaListaOrdenada).sort(
+        function (elementoA, elementoB) {
+            return elementoA[1] - elementoB[1];
+        }
+    )
+    let laModa = objetoConvertido[objetoConvertido.length - 1];
+    console.log(laModa);
+}
